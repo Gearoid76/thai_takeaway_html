@@ -1,315 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Thai-takeaway</title>
-    <style>
-        body, html {
-          height: 100%;
-          font-family: "Inconsolata", sans-serif;
-        }
-        
-        .bgimg {
-          background-position: center;
-          background-size: cover;
-          background-image: url("#");
-          min-height: 75%;
-        }
-        
-        .menu {
-          display: none;
-        }
-        </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Thai-takeaway</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("#");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="w3-top">
-        <div class="w3-row w3-padding w3-black">
-          <div class="w3-col s3">
-            <a href="#" class="w3-button w3-block w3-black">HOME</a>
-          </div>
-          <div class="w3-col s3">
-            <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-          </div>
-          <div class="w3-col s3">
-            <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-          </div>
-          <div class="w3-col s3">
-            <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
-          </div>
-        </div>
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
       </div>
-      
-      <!-- Header with image -->
-      <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-          <span class="w3-tag">Monday - Friday  11:00 - 19:00 hrs
-      Saturaday - Sunday CLOSED</span>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">Monday - Friday 11:00 - 19:00 hrs
+        Saturaday - Sunday CLOSED</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:90px">Thai-takeaway<br></span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">Ratamestarinkatu 3 Helsinki, Finland</span>
+    </div>
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Thai-takeaway</span></h5>
+        <p>Situated what looks like a hole in the wall this elegent take-away is nested in between the greatist street
+          art that Helsinki has to offer.</p>
+        <p>Having your favourate Thai foods in variety of flavours to cater to vegetarians,vegens and meatlovers alike.
+        </p>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <p><i>"It's never too early, nor too late to eat Thai-food" Fresh is the new sweet.</i></p>
+          <p>Chef, Thai-takeaway</p>
         </div>
-        <div class="w3-display-middle w3-center">
-          <span class="w3-text-white" style="font-size:90px">Thai-takeaway<br></span>
+        <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+        <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+        <p><strong>Address:</strong>Ratamestarinkatu 3 Helsinki, Finland</p>
+      </div>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="menu">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+        <div class="w3-row w3-center w3-card w3-padding">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Menu-Fin');" id="myLink">
+            <div class="w3-col s6 tablink">Menu Finnish</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Menu-Eng');">
+            <div class="w3-col s6 tablink">Menu English</div>
+          </a>
         </div>
-        <div class="w3-display-bottomright w3-center w3-padding-large">
-          <span class="w3-text-white">Ratamestarinkatu 3 Helsinki, Finland</span>
-        </div>
-      </header>
-      
-      <!-- Add a background color and large text to the whole page -->
-      <div class="w3-sand w3-grayscale w3-large">
-      
-      <!-- About Container -->
-      <div class="w3-container" id="about">
-        <div class="w3-content" style="max-width:700px">
-          <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Thai-takeaway</span></h5>
-          <p>Situated what looks like a hole in the wall this elegent take-away is nested in between the greatist street art that Helsinki has to offer.</p>
-          <p>Having your favourate Thai foods in variety of flavours to cater to vegetarians,vegens and meatlovers alike.</p>
-          <div class="w3-panel w3-leftbar w3-light-grey">
-            <p><i>"It's never too early, nor too late to eat Thai-food" Fresh is the new sweet.</i></p>
-            <p>Chef, Thai-takeaway</p>
+
+        <!-- Finnish Menu aloitta Kana -->
+
+        <div id="Menu-Fin" class="w3-container menu w3-padding-48 w3-card">
+          <h3>Kana (A) / 10,00€</h3>
+          <div class="Fin-Kana">
+            <p class="w3-text-grey">A1 Gäng Curry Kai</p>
+            <h4>Keltainen Curry Vihannekset ja Kookosmaito</h4><br>
+
+            <p class="w3-text-grey">A2 Gäng khio Wan Kai </p>
+            <h4>Vihreä Curry Kookosmaidossa</h4><br>
+
+            <p class="w3-text-grey">A3 Phad Thai Kai</p>
+            <h4>Paistettua Nuudelia Kananmuna Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">A4 Phad Kapau Kai</p>
+            <h4>Chili Basillikanlehtià Sipulia</h4><br>
+
+            <p class="w3-text-grey">A5 Phad Pio Waan Kai</p>
+            <h4>Hapanimelaà vihanneksia ananasta</h4><br>
+
+            <p class="w3-text-grey">A6 Kai Phad Metmamung</p> <!-- strange that these is not the same as the English-->
+            <h4>Vihanneksia Cashew-pähkinää</h4><br>
+
+            <p class="w3-text-grey">A7 Kai Phad Khing</p>
+            <h4>Vihanneksia herkkusieniä inkvääriä</h4><br>
+
+            <p class="w3-text-grey">A8 Massaman Kai</p>
+            <h4>Massaman Curry Kookosmaito Tomaatti</h4><br>
+
+            <p class="w3-text-grey">A9 Kai Pad Prik Pau</p>
+            <h4>Chili kastike Vihannekset</h4><br>
+
+            <p class="w3-text-grey">A10 Gäng Pet Kai</p>
+            <h4>Punacurry Ananas Paprika</h4><br>
+
+            <p class="w3-text-grey">A11 Phanang Kai</p>
+            <h4>Phan an curry papuja kookosmaidossa</h4><br>
           </div>
-          <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-          <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-          <p><strong>Address:</strong>Ratamestarinkatu 3 Helsinki, Finland</p>
-        </div>
-      </div>
-      
-      <!-- Menu Container -->
-      <div class="w3-container" id="menu">
-        <div class="w3-content" style="max-width:700px">
-       
-          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
-        
-          <div class="w3-row w3-center w3-card w3-padding">
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Menu-Fin');" id="myLink">
-              <div class="w3-col s6 tablink">Menu Finnish</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openMenu(event, 'Menu-Eng');">
-              <div class="w3-col s6 tablink">Menu English</div>
-            </a>
+          <h3>Shrimp(B) / 11,00€</h3>
+          <div class="Fin-Katarapu">
+            <p class="w3-text-grey">B1 Gäng Curry Kung</p>
+            <h4>Keltainen curry Vihannekset Kookosmaito</h4><br>
+
+            <p class="w3-text-grey">B2 Gäng Khio Wan Kung </p>
+            <h4>Vihreäcury Vihanneksia kookosmaito</h4><br>
+
+            <p class="w3-text-grey">B3 Gäng Pet Kung</p>
+            <h4>Punacurry Ananas Paprika</h4><br>
+
+            <p class="w3-text-grey">B4 Phad Thai Kung</p>
+            <h4>Paistettua Nuudelia Kananmunaa Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">B5 Phad Pio Waan Kung</p>
+            <h4>Hapanimelää Ananasta Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">B6 Kung Pad Prik Pau</p>
+            <h4>Chilikastike Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">B7 Massaman Kung</p>
+            <h4>Massamancurry Kookosmaito Tomaatti</h4><br>
+
+            <p class="w3-text-grey">B8 Phanang Kung</p>
+            <h4>Phanangcurry Papuja Kookosmaito</h4><br>
+
+            <p class="w3-text-grey">B9 Kung Pad Metmamung</p>
+            <h4>Vihanneksia Cashew-pähkinää</h4><br>
           </div>
 
-        <!-- Finnish Menu aloitta Kana --> 
-      
-          <div id="Menu-Fin" class="w3-container menu w3-padding-48 w3-card">
-            <h3>Chicken(A) / 10,00€</h3>
-                <p class="w3-text-grey">A1 hello Curry Kai and dave</p>
-                <h4>Yellow curry conconut milk vegetables</h4><br>
-                <p class="w3-text-grey">A2 Gäng khio Wan Kai </p>
-                <h4>Green curry coconut milk vegetables</h4><br>
-                <p class="w3-text-grey">A3 Phad Thai Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
-                <p class="w3-text-grey">A4 Phad Thai Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
-                <p class="w3-text-grey">A5 Phad Pio Waan Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
-                <p class="w3-text-grey">A6 Phad Metmamung Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
-                <p class="w3-text-grey">A7 Phad Khing Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
-                <p class="w3-text-grey">A8 Massaman Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
-                <p class="w3-text-grey">A9 Phad Prik Pau Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
-                <p class="w3-text-grey">A10 Gäng Pet Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
-                <p class="w3-text-grey">A11 Phanang Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>    
+          <h3>Tofu(C) / 10,00€</h3>
+          <div class="Fin-Tofu">
+            <p class="w3-text-grey">C1 Gäng Curry Tofu</p>
+            <h4>Keltainen Curry Vihanneksia Kookosmaitoa</h4><br>
+
+            <p class="w3-text-grey">C2 Gäng khio Wan Tofu </p>
+            <h4>Vihreä Curry Vihanneksia Kookosmaidossa</h4><br>
+
+            <p class="w3-text-grey">C3 Phad Thai Tofu</p>
+            <h4>Paistettua Nuudelia Vihanneksia Kan an munaa</h4><br>
+
+            <p class="w3-text-grey">C4 Phad Kapau Tofu</p>
+            <h4>Basilikanlehtiä Sipulia</h4><br>
+
+            <p class="w3-text-grey">C5 Phad Pio Waan Tofu</p>
+            <h4>Hapanimelä Ananasta Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">C6 Phanang Tofu </p>
+            <h4>Phanang Curry Papuja Kookosmaito</h4><br>
+
+            <p class="w3-text-grey">C7 Tofu Phad Khing</p>
+            <h4>Inkivääri Herkkusieniä Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">C8 Tofu Phad Metmamung</p>
+            <h4>Cashew-pähkinää Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">C9 Tofu Phad Prik Pau</p>
+            <h4>Chili-kastike Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">C10 Massaman Tofu</p>
+            <h4>Massaman Curry Kookosmaito Vihanneksia</h4><br>
+
+            <p class="w3-text-grey">C11 Gäng Pet Tofu</p>
+            <h4>Punainen Curry Ananas Paprika</h4><br> <!-- ask as ENG menu part is in Finnish-->
           </div>
 
-          <!--Putting in two marks as one got easly confused with each menu-->
-          <!-- This is the start of the English menu and starting with Chicken-->
-      
-          <div id="Menu-Eng" class="w3-container menu w3-padding-48 w3-card">
-            <h3>Chicken(A) / 10,00€</h3>
-            <div class="Eng-Chicken">
-                <p class="w3-text-grey">A1 Gäng Curry Kai</p>
-                <h4>Yellow curry conconut milk vegetables</h4><br>
+          <h3>Beef(D) / 11,00€</h3>
+          <div class="Fin-Härkä">
+            <p class="w3-text-grey">D1 Gäng Curry Nya</p>
+            <h4>Keltainen Curry Vihannekset ja Kookosmaito</h4><br>
 
-                <p class="w3-text-grey">A2 Gäng khio Wan Kai </p>
-                <h4>Green curry coconut milk vegetables</h4><br>
+            <p class="w3-text-grey">D2 Gäng khio Wan Nyai </p>
+            <h4>Vihreä Curry Kookosmaidossa</h4><br>
 
-                <p class="w3-text-grey">A3 Phad Thai Kai</p>
-                <h4>Fried noodles egg and vegetables</h4><br>
+            <p class="w3-text-grey">D3 Phad Thai Nya</p>
+            <h4>Paistettua Nuudelia Kananmuna Vihanneksia</h4><br>
 
-                <p class="w3-text-grey">A4 Phad Kapuu Kai</p>
-                <h4>Fried chili bamboo oinons paprika basil leaf</h4><br>
+            <p class="w3-text-grey">D4 Phad Kapau Nya</p>
+            <h4>Chili Basillikanlehtiä Sipulia</h4><br>
 
-                <p class="w3-text-grey">A5 Phad Pio Waan Kai</p>
-                <h4>Fried sweet&sour sauce vegetable pineapple</h4><br>
+            <p class="w3-text-grey">D5 Phad Pio Waan Nya</p>
+            <h4>Hapanimeläà vihanneksia ananasta</h4><br>
 
-                <p class="w3-text-grey">A6 Phad Metmamung Kai</p>
-                <h4>Fried vegetables cashew nuts</h4><br>
+            <p class="w3-text-grey">D6 Nya Phad Metmamung</p>
+            <h4>Vihanneksia Cashew-pähkinää</h4><br>
 
-                <p class="w3-text-grey">A7 Phad Khing Kai</p>
-                <h4>Fried ginger vegetables mushroom</h4><br>
+            <p class="w3-text-grey">D7 Phad Khing Nya</p>
+            <h4>Vihanneksia herkkusieniä inkivääriä</h4><br>
 
-                <p class="w3-text-grey">A8 Massaman Kai</p>
-                <h4>Massaman curry coconut milk tomato</h4><br>
+            <p class="w3-text-grey">D8 Massaman Nya</p>
+            <h4>Massaman Curry kookosmaito Tomaatti</h4><br>
 
-                <p class="w3-text-grey">A9 Phad Prik Pau Kai</p>
-                <h4>Chili paste and vegetables</h4><br>
+            <p class="w3-text-grey">D9 Nya Pad Prik Pau</p>
+            <h4>Chili kastike Vihannekset</h4><br>
 
-                <p class="w3-text-grey">A10 Gäng Pet Kai</p>
-                <h4>Red curry coconut milk pineapple</h4><br>
+            <p class="w3-text-grey">D10 Gäng Pet Nya</p>
+            <h4> pineapple</h4><br>
 
-                <p class="w3-text-grey">A11 Phanang Kai</p>
-                <h4>Phanang curry coconut milk vegetables</h4><br>
-            </div>
-
-            <!-- This is the start of the English menu and Shrimp-->
-
-                <h3>Shrimp(B) / 11,00€</h3>
-                <div class="Eng-Shrimp">
-                    <p class="w3-text-grey">B1 Gäng Curry Kung</p>
-                    <h4>Yellow curry conconut milk vegetables</h4><br>
-
-                    <p class="w3-text-grey">B2 Gäng Khio Wan Kung </p>
-                    <h4>Green curry coconut milk vegetables</h4><br>
-
-                    <p class="w3-text-grey">B3 Gäng Pet Kung</p>
-                    <h4>Red curry coconut milk pineapple</h4><br>
-
-                    <p class="w3-text-grey">B4 Phad Thai Kung</p>
-                    <h4>Fried noodles egg vegetables</h4><br>
-
-                    <p class="w3-text-grey">B5 Phad Pio Waan Kung</p>
-                    <h4>Fried sweet&sour sauce vegetable pineapple</h4><br>
-
-                    <p class="w3-text-grey">B6 Phad Prik Pau Kung</p>
-                    <h4>Chili paste and vegetables</h4><br>
-
-                    <p class="w3-text-grey">B7 Massaman Kung</p>
-                    <h4>Massaman curry coconut milk tomato</h4><br>
-
-                    <p class="w3-text-grey">B8 Phanang Kung</p>
-                    <h4>Phanang curry coconut milk vegetables</h4><br>
-
-                    <p class="w3-text-grey">B9 Phad Metmamung Kung</p>
-                    <h4>Fried vegetables cashew nuts</h4><br>
-                </div>
-
-            <!-- This is the start of the English menu with Tofu-->
-
-                <h3>Tofu(C) / 10,00€</h3>
-                <div class="Eng-Tofu">
-                    <p class="w3-text-grey">C1 Gäng Curry Tofu</p>
-                    <h4>Yellow curry coconut milk vegetables</h4><br>
-
-                    <p class="w3-text-grey">C2 Gäng khio Wan Tofu </p>
-                    <h4>Green curry coconut milk vegetables</h4><br>
-
-                    <p class="w3-text-grey">C3 Phad Thai Tofu</p>
-                    <h4>Fried noodles egg and vegetables</h4><br>
-
-                    <p class="w3-text-grey">C4 Phad Kapau Tofu</p>
-                    <h4>Fried chili bamboo oinons paprika basil leaf</h4><br>
-
-                    <p class="w3-text-grey">C5 Phad Pio Waan Tofu</p>
-                    <h4>Fried sweet&sour sauce vegetable pineapple</h4><br>
-
-                    <p class="w3-text-grey">C6 Phanang Tofu </p>
-                    <h4>Phanang curry coconut milk vegetables</h4><br>
-
-                    <p class="w3-text-grey">C7 Phad Khing Tofu</p>
-                    <h4>Fried ginger vegetables mushroom</h4><br>
-
-                    <p class="w3-text-grey">C8 Phad Metmamung Tofu</p>
-                    <h4>Fried vegetables cashew nuts</h4><br>
-
-                    <p class="w3-text-grey">C9 Phad Prik Pau Tofu</p>
-                    <h4>Chili paste and vegetables</h4><br>
-
-                    <p class="w3-text-grey">C10 Massaman Tofu</p>
-                    <h4>Red curry coconut milk pineapple</h4><br>
-
-                    <p class="w3-text-grey">C11 Gäng Pet Tofu</p>
-                    <h4>Red Curry coconut milk Pineapple </h4><br> <!-- ask as ENG menu part is in Finnish-->
-                </div>
-
-            <!-- This is the start of the English menu and Beef-->    
-                
-                <h3>Beef(D) / 11,00€</h3>
-                <div class="Eng-Beef">
-                    <p class="w3-text-grey">D1 Gäng Curry Nya</p>
-                    <h4>Yellow curry conconut milk vegetables</h4><br>
-
-                    <p class="w3-text-grey">D2 Gäng khio Wan Nya </p>
-                    <h4>Green curry coconut milk vegetables</h4><br>
-
-                    <p class="w3-text-grey">D3 Phad Thai Nya</p>
-                    <h4>Fried noodles egg and vegetables</h4><br>
-
-                    <p class="w3-text-grey">D4 Phad Kapau Nya</p>
-                    <h4>Fried chili bamboo oinons paprika basil leaf</h4><br>
-
-                    <p class="w3-text-grey">D5 Phad Pio Waan Nya</p>
-                    <h4>Fried sweet&sour sauce vegetable pineapple</h4><br>
-
-                    <p class="w3-text-grey">D6 Phad Metmamung Nya</p>
-                    <h4>Fried vegetables cashew nuts</h4><br>
-
-                    <p class="w3-text-grey">D7 Phad Khing Nya</p>
-                    <h4>Fried ginger vegetables mushroom</h4><br>
-
-                    <p class="w3-text-grey">D8 Massaman Nya</p>
-                    <h4>Massaman curry coconut milk tomato</h4><br>
-
-                    <p class="w3-text-grey">D9 Phad Prik Pau Nya</p>
-                    <h4>Chili paste and vegetables</h4><br>
-
-                    <p class="w3-text-grey">D10 Gäng Pet Nya</p>
-                    <h4>Red curry coconut milk pineapple</h4><br>
-                    
-                    <p class="w3-text-grey">D11 Phanang Nya</p>
-                    <h4>Phanang curry coconut milk vegetables</h4><br>
-                </div>
-
-                
-            
-          </div>  
-          <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+            <p class="w3-text-grey">D11 Phanang Nya</p>
+            <h4>Phanang curry coconut milk vegetables</h4><br>
+          </div>
         </div>
-      </div>
-      
-      <!-- Contact/Area Container -->
-      <div class="w3-container" id="where" style="padding-bottom:32px;">
-        <div class="w3-content" style="max-width:700px">
-          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-          <p>Find us at some address at some place.</p>
 
-          <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+        <!--Putting in two marks as one got easly confused with each menu-->
+        <!-- This is the start of the English menu and starting with Chicken-->
+
+        <div id="Menu-Eng" class="w3-container menu w3-padding-48 w3-card">
+          <h3>Chicken(A) / 10,00€</h3>
+          <div class="Eng-Chicken">
+            <p class="w3-text-grey">A1 Gäng Curry Kai</p>
+            <h4>Yellow curry conconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">A2 Gäng khio Wan Kai </p>
+            <h4>Green curry coconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">A3 Phad Thai Kai</p>
+            <h4>Fried noodles egg and vegetables</h4><br>
+
+            <p class="w3-text-grey">A4 Phad Kapuu Kai</p>
+            <h4>Fried chili bamboo oinons paprika basil leaf</h4><br>
+
+            <p class="w3-text-grey">A5 Phad Pio Waan Kai</p>
+            <h4>Fried sweet&sour sauce vegetable pineapple</h4><br>
+
+            <p class="w3-text-grey">A6 Phad Metmamung Kai</p>
+            <h4>Fried vegetables cashew nuts</h4><br>
+
+            <p class="w3-text-grey">A7 Phad Khing Kai</p>
+            <h4>Fried ginger vegetables mushroom</h4><br>
+
+            <p class="w3-text-grey">A8 Massaman Kai</p>
+            <h4>Massaman curry coconut milk tomato</h4><br>
+
+            <p class="w3-text-grey">A9 Phad Prik Pau Kai</p>
+            <h4>Chili paste and vegetables</h4><br>
+
+            <p class="w3-text-grey">A10 Gäng Pet Kai</p>
+            <h4>Red curry coconut milk pineapple</h4><br>
+
+            <p class="w3-text-grey">A11 Phanang Kai</p>
+            <h4>Phanang curry coconut milk vegetables</h4><br>
+          </div>
+
+          <h3>Shrimp(B) / 11,00€</h3>
+          <div class="Eng-Shrimp">
+            <p class="w3-text-grey">B1 Gäng Curry Kung</p>
+            <h4>Yellow curry conconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">B2 Gäng Khio Wan Kung </p>
+            <h4>Green curry coconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">B3 Gäng Pet Kung</p>
+            <h4>Red curry coconut milk pineapple</h4><br>
+
+            <p class="w3-text-grey">B4 Phad Thai Kung</p>
+            <h4>Fried noodles egg vegetables</h4><br>
+
+            <p class="w3-text-grey">B5 Phad Pio Waan Kung</p>
+            <h4>Fried sweet&sour sauce vegetable pineapple</h4><br>
+
+            <p class="w3-text-grey">B6 Phad Prik Pau Kung</p>
+            <h4>Chili paste and vegetables</h4><br>
+
+            <p class="w3-text-grey">B7 Massaman Kung</p>
+            <h4>Massaman curry coconut milk tomato</h4><br>
+
+            <p class="w3-text-grey">B8 Phanang Kung</p>
+            <h4>Phanang curry coconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">B9 Phad Metmamung Kung</p>
+            <h4>Fried vegetables cashew nuts</h4><br>
+          </div>
+
+          <h3>Tofu(C) / 10,00€</h3>
+          <div class="Eng-Tofu">
+            <p class="w3-text-grey">C1 Gäng Curry Tofu</p>
+            <h4>Yellow curry coconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">C2 Gäng khio Wan Tofu </p>
+            <h4>Green curry coconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">C3 Phad Thai Tofu</p>
+            <h4>Fried noodles egg and vegetables</h4><br>
+
+            <p class="w3-text-grey">C4 Phad Kapau Tofu</p>
+            <h4>Fried chili bamboo oinons paprika basil leaf</h4><br>
+
+            <p class="w3-text-grey">C5 Phad Pio Waan Tofu</p>
+            <h4>Fried sweet&sour sauce vegetable pineapple</h4><br>
+
+            <p class="w3-text-grey">C6 Phanang Tofu </p>
+            <h4>Phanang curry coconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">C7 Phad Khing Tofu</p>
+            <h4>Fried ginger vegetables mushroom</h4><br>
+
+            <p class="w3-text-grey">C8 Phad Metmamung Tofu</p>
+            <h4>Fried vegetables cashew nuts</h4><br>
+
+            <p class="w3-text-grey">C9 Phad Prik Pau Tofu</p>
+            <h4>Chili paste and vegetables</h4><br>
+
+            <p class="w3-text-grey">C10 Massaman Tofu</p>
+            <h4>Red curry coconut milk pineapple</h4><br>
+
+            <p class="w3-text-grey">C11 Gäng Pet Tofu</p>
+            <h4>Red Curry coconut milk Pineapple </h4><br> <!-- ask as ENG menu part is in Finnish-->
+          </div>
+
+          <h3>Beef(D) / 11,00€</h3>
+          <div class="Eng-Beef">
+            <p class="w3-text-grey">D1 Gäng Curry Nya</p>
+            <h4>Yellow curry conconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">D2 Gäng khio Wan Nya </p>
+            <h4>Green curry coconut milk vegetables</h4><br>
+
+            <p class="w3-text-grey">D3 Phad Thai Nya</p>
+            <h4>Fried noodles egg and vegetables</h4><br>
+
+            <p class="w3-text-grey">D4 Phad Kapau Nya</p>
+            <h4>Fried chili bamboo oinons paprika basil leaf</h4><br>
+
+            <p class="w3-text-grey">D5 Phad Pio Waan Nya</p>
+            <h4>Fried sweet&sour sauce vegetable pineapple</h4><br>
+
+            <p class="w3-text-grey">D6 Phad Metmamung Nya</p>
+            <h4>Fried vegetables cashew nuts</h4><br>
+
+            <p class="w3-text-grey">D7 Phad Khing Nya</p>
+            <h4>Fried ginger vegetables mushroom</h4><br>
+
+            <p class="w3-text-grey">D8 Massaman Nya</p>
+            <h4>Massaman curry coconut milk tomato</h4><br>
+
+            <p class="w3-text-grey">D9 Phad Prik Pau Nya</p>
+            <h4>Chili paste and vegetables</h4><br>
+
+            <p class="w3-text-grey">D10 Gäng Pet Nya</p>
+            <h4>Red curry coconut milk pineapple</h4><br>
+
+            <p class="w3-text-grey">D11 Phanang Nya</p>
+            <h4>Phanang curry coconut milk vegetables</h4><br>
+          </div>
         </div>
+        <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
       </div>
-      
-      <!-- End page content -->
+    </div>
+
+    <!-- Contact/Area Container -->
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+        <p>Ratamestarinkatu 3 Helsinki, Finland</p>
+
+        <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
       </div>
-      
-      <!-- Footer -->
-      <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-      </footer>
-      <script>
-        // Tabbed Menu
-        function openMenu(evt, menuName) {
-          var i, x, tablinks;
-          x = document.getElementsByClassName("menu");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-          }
-          document.getElementById(menuName).style.display = "block";
-          evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-        }
-        document.getElementById("myLink").click();
-        </script>
-      
-      
-    
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">HELLO HELLO</a></p> -->
+  </footer>
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+  </script>
+
+
+
 </body>
+
 </html>
