@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-
-
-  <title>Thai-takeaway</title>
-</head>
+    <head>
+        <title>Bootstrap Tutorial Sample Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
                 
 
 <body>
@@ -37,22 +33,23 @@
             </li>
       </ul>
    </div>
-
   </nav>
-
   <!-- Header with image -->
-  <header class="bgimg display-container grayscale-min" id="home">
-    <div class="display-bottomleft center padding-large hide-small">
-      <span class="tag">Monday - Friday 11:00 - 19:00 hrs
-        Saturaday - Sunday CLOSED</span>
-    </div>
+ <!-- <header class="bgimg display-container grayscale-min" id="home">
+
+    
     <div class="display-middle center">
       <span class="text-blue" style="font-size:90px">Thai-Takeaway<br></span>
     </div>
-    <div class="display-bottomright center padding-large">
-      <span class="text-blue">Ratamestarinkatu 3 Helsinki, Finland</span>
-    </div>
-  </header>
+  </header> -->
+  <div class="Header" id="home">
+      <img src="/pictures/img_snow_wide.jpg" alt="snow" width="100%;">
+      <div class="bottom-left">Monday - Friday 11:00 - 19:00 hrs
+        Saturaday - Sunday CLOSED</div>
+      <div class="bottom-right">Ratamestarinkatu 3 Helsinki, Finland</div>
+      <div class="centered">Thai-Takeaway</div>
+  </div>
+
 
   <!-- Add a background color and large text to the whole page -->
   <div class="sand grayscale large">
@@ -395,24 +392,10 @@
   <footer class="center light-grey padding-48 large">
     <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">HELLO HELLO</a></p> -->
   </footer>
-  <script>
-    // Tabbed Menu
-    function openMenu(evt, menuName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("menu");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
-      }
-      document.getElementById(menuName).style.display = "block";
-      evt.currentTarget.firstElementChild.className += " dark-grey";
-    }
-    document.getElementById("myLink").click();
-  </script>
-
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 </body>
