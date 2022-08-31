@@ -9,6 +9,8 @@ body {
 }
 .menu {
   display: none;
+  overflow-y: scroll;
+  height: 700px;
 }
 
 .nav-link,
