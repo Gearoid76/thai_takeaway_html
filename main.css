@@ -1,12 +1,14 @@
-body {
+body,html {
     padding: 0;
     margin: 0;
     background: #d6f392;
+    height:100%;
 }
 .navbar {
     background:#fc3802;
     overflow: hidden;
 }
+
 .menu {
   display: none;
   overflow-y: scroll;
@@ -41,6 +43,13 @@ body {
     position: relative;
     text-align: center;
     color: rgb(252, 102, 102);
+  }
+
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/pictures/Take-away_logo.jpg");
+    min-height: 75%;
   }
     
   .top-right {
