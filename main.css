@@ -1,24 +1,38 @@
 body {
     padding: 0;
     margin: 0;
-    background: #f2f6e9;
+    background: #d6f392;
 }
 .navbar {
     background:#fc3802;
+    overflow: hidden;
 }
+.menu {
+  display: none;
+}
+
 .nav-link,
 .navbar-brand {
     color: #fff;
     cursor: pointer;
 }
+
 .nav-link {
     margin-right: 1em !important;
 }
+
 .nav-link:hover {
     color: #000;
 }
+
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .Header {
