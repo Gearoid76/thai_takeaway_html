@@ -26,7 +26,7 @@ body,html {
 }
 
 .nav-link:hover {
-    color: #000;
+    color: rgb(179, 6, 6);
 }
 
 .navbar-collapse {
@@ -53,15 +53,15 @@ body,html {
     min-height: 75%;
   } 
     
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
   
   .bottom-right {
     position: absolute;
     bottom: 8px;
+    right: 16px;
+  }
+  .bottom-left {
+    position: absolute;
+    top: 8px;
     right: 16px;
   }
   
