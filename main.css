@@ -1,7 +1,6 @@
 body,html {
     padding: 0;
     margin: 0;
-    background: #d6f392;
     height:100%;
    
 }
@@ -50,7 +49,7 @@ body,html {
   .bgimg {
     background-position: center;
     background-size: cover;
-    background-image: url("/pictures/Thai_Asia_header.jpg");
+    background-image: url("./pictures/Thai_Asia_header.jpeg");
     min-height: 75%;
   } 
     
