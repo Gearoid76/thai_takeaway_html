@@ -35,12 +35,11 @@
       </nav>
 
     <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg display-container grayscale-min" id="home">
    <!-- <img src="./pictures/Thai_Asia_header.jpeg"> -->
-    <header class="bgimg display-container greyscale-min" id="home" >
     </div>
-        <div class="display-bottomleft center padding-large hide-small">
-            <span class="tag">Open from 11 to 19 / Sat Sun closed</span>
+        <div class="display-bottomleft padding-large hide-small">
+            <span class="text-white">Open from 11 to 19 / Sat Sun closed</span>
         </div>
         <div class="display-middle center">
             <span class="text-white" style="font-size:90px">Thai<br>Take-away</span>
@@ -49,26 +48,8 @@
             <span class="text-white">Ratamestarinkatu 15 Helsinki</span>
     </header> 
 
- <!--  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-            <span class="w3-tag">Open from 11 to 19 / Sat Sun closed</span>
-        </div>
-        <div class="w3-display-middle w3-center">
-            <span class="w3-text-white" style="font-size:90px">Thai<br>Take-away</span>
-        </div>
-        <div class="w3-display-bottomright w3-center w3-padding-large">
-            <span class="w3-text-white">Ratamestarinkatu 15 Helsinki</span>
-        </div>
-    </header> -->
-
-
-
-
-
-
-
     <!-- About Container -->
-    <div class="container" id="about" style="background-color:#029cae">
+    <div class="container" id="about">
         <div class="content" style="max-width: 700px">
             <h5 class="center padding-64"><span class="tag wide"></span> About Thai-Takeaway</h5>
             <p>Situated what looks like a hole in the wall this elegent take-away is nested in between the greatist street
@@ -79,160 +60,161 @@
                 <p><i>"It's never too early, nor too late to eat Thai-food" Fresh is the new sweet.</i></p>
                 <p>Chef, Thai-takeaway</p>
             </div>
-        <img src="#" style="width:100%">
+        <!--<img src="#" style="width:100%"> -->
         <p><strong>Opening hours:</strong> weekdays from 11am to 7pm. Weekend closed</p>
         <p><strong>Address:</strong>Ratamestarinkatu 3 Heslinki, Finland</p>
         </div>
     </div>
 
     <!--Menu Container-->
-    <div class="container border-2" id="menu">
-        <div class="content" style="width: 1000px">
-            <h5 class="center padding-48"><span class="tag wide">The Menu</span></h5>
-            <div class="row center padding">
-                <div class="conatiner" style="background-color: #e78720; height: 200px; overflow-y: scroll;">
-                    <button class="bar-item button" onclick="openMenu('Finnish-menu')">Finnish-menu</button>
-                    <button class="bar-item button" onclick="openMenu('English-menu')">English-menu</button>
-                        <div class="col s6 tablink center">
-                            <div id="Finnish-menu" class="w3-container menu w3-padding-48 w3-card">
+    <div class="container" id="menu">
+        <div class="content" style="max-width: 700px">
+            <h5 class="center padding-48"><span class="tag wide">THE MENU</span></h5>
+            <div class="row center card padding">
+              <a href="javascript:void(0)" onclick="openMenu(event, 'Finnish-menu');" id="myLink">   
+                      <div class="col s6 tablink">Fi-Menu</div>
+              </a>
+              <a href="javascript:void(0)" onclick="openMenu(event, 'English-menu');" id="myLink">
+                        <div class="col s6 tablink">Eng-Menu</div>
+              </a>
+            </div>
+                    <div id="Finnish-menu" class="container menu padding-48 card">
                             <h3>Kana(A) / 10,00€</h3>
                             <p class="text-grey">A1 Gäng Curry Kai</p>
                             <h4>Keltainen Curry Vihannekset ja Kookosmaito</h4><br>
-                    
+                      
                             <p class="text-grey">A2 Gäng khio Wan Kai </p>
                             <h4>Vihreä Curry Kookosmaidossa</h4><br>
-                    
+                      
                             <p class="text-grey">A3 Phad Thai Kai</p>
                             <h4>Paistettua Nuudelia Kananmuna Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">A4 Phad Kapau Kai</p>
                             <h4>Chili Basillikanlehtià Sipulia</h4><br>
-                    
+                      
                             <p class="text-grey">A5 Phad Pio Waan Kai</p>
                             <h4>Hapanimelaà vihanneksia ananasta</h4><br>
-                    
+                      
                             <p class="text-grey">A6 Kai Phad Metmamung</p> <!-- strange that these is not the same as the English-->
                             <h4>Vihanneksia Cashew-pähkinää</h4><br>
-                    
+                      
                             <p class="text-grey">A7 Kai Phad Khing</p>
                             <h4>Vihanneksia herkkusieniä inkvääriä</h4><br>
-                    
+                      
                             <p class="text-grey">A8 Massaman Kai</p>
                             <h4>Massaman Curry Kookosmaito Tomaatti</h4><br>
-                    
+                      
                             <p class="text-grey">A9 Kai Pad Prik Pau</p>
                             <h4>Chili kastike Vihannekset</h4><br>
-                    
+                      
                             <p class="text-grey">A10 Gäng Pet Kai</p>
                             <h4>Punacurry Ananas Paprika</h4><br>
-                    
+                      
                             <p class="text-grey">A11 Phanang Kai</p>
                             <h4>Phan an curry papuja kookosmaidossa</h4><br>
-                        
-                        <h3>Katarapu(B) / 11,00€</h3>
-                        
+                          
+                          <h3>Katarapu(B) / 11,00€</h3>
+                          
                             <p class="text-grey">B1 Gäng Curry Kung</p>
                             <h4>Keltainen curry Vihannekset Kookosmaito</h4><br>
-                    
+                      
                             <p class="text-grey">B2 Gäng Khio Wan Kung </p>
                             <h4>Vihreäcury Vihanneksia kookosmaito</h4><br>
-                    
+                      
                             <p class="text-grey">B3 Gäng Pet Kung</p>
                             <h4>Punacurry Ananas Paprika</h4><br>
-                    
+                      
                             <p class="text-grey">B4 Phad Thai Kung</p>
                             <h4>Paistettua Nuudelia Kananmunaa Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">B5 Phad Pio Waan Kung</p>
                             <h4>Hapanimelää Ananasta Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">B6 Kung Pad Prik Pau</p>
                             <h4>Chilikastike Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">B7 Massaman Kung</p>
                             <h4>Massamancurry Kookosmaito Tomaatti</h4><br>
-                    
+                      
                             <p class="text-grey">B8 Phanang Kung</p>
                             <h4>Phanangcurry Papuja Kookosmaito</h4><br>
-                    
+                      
                             <p class="text-grey">B9 Kung Pad Metmamung</p>
                             <h4>Vihanneksia Cashew-pähkinää</h4><br>
-                        
-                    
-                        <h3>Tofu(C) / 10,00€</h3>
-                        
+                         
+                      
+                          <h3>Tofu(C) / 10,00€</h3>
+                          
                             <p class="text-grey">C1 Gäng Curry Tofu</p>
                             <h4>Keltainen Curry Vihanneksia Kookosmaitoa</h4><br>
-                    
+                      
                             <p class="text-grey">C2 Gäng khio Wan Tofu </p>
                             <h4>Vihreä Curry Vihanneksia Kookosmaidossa</h4><br>
-                    
+                      
                             <p class="text-grey">C3 Phad Thai Tofu</p>
                             <h4>Paistettua Nuudelia Vihanneksia Kan an munaa</h4><br>
-                    
+                      
                             <p class="text-grey">C4 Phad Kapau Tofu</p>
                             <h4>Basilikanlehtiä Sipulia</h4><br>
-                    
+                      
                             <p class="text-grey">C5 Phad Pio Waan Tofu</p>
                             <h4>Hapanimelä Ananasta Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">C6 Phanang Tofu </p>
                             <h4>Phanang Curry Papuja Kookosmaito</h4><br>
-                    
+                      
                             <p class="text-grey">C7 Tofu Phad Khing</p>
                             <h4>Inkivääri Herkkusieniä Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">C8 Tofu Phad Metmamung</p>
                             <h4>Cashew-pähkinää Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">C9 Tofu Phad Prik Pau</p>
                             <h4>Chili-kastike Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">C10 Massaman Tofu</p>
                             <h4>Massaman Curry Kookosmaito Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">C11 Gäng Pet Tofu</p>
                             <h4>Punainen Curry Ananas Paprika</h4><br> <!-- ask as ENG menu part is in Finnish-->
-                    
-                        <h3>Härkä(D) / 11,00€</h3>
-                        
+                      
+                          <h3>Härkä(D) / 11,00€</h3>
+                          
                             <p class="text-grey">D1 Gäng Curry Nya</p>
                             <h4>Keltainen Curry Vihannekset ja Kookosmaito</h4><br>
-                    
+                      
                             <p class="text-grey">D2 Gäng khio Wan Nyai </p>
                             <h4>Vihreä Curry Kookosmaidossa</h4><br>
-                    
+                      
                             <p class="text-grey">D3 Phad Thai Nya</p>
                             <h4>Paistettua Nuudelia Kananmuna Vihanneksia</h4><br>
-                    
+                      
                             <p class="text-grey">D4 Phad Kapau Nya</p>
                             <h4>Chili Basillikanlehtiä Sipulia</h4><br>
-                    
+                      
                             <p class="text-grey">D5 Phad Pio Waan Nya</p>
                             <h4>Hapanimeläà vihanneksia ananasta</h4><br>
-                    
+                      
                             <p class="text-grey">D6 Nya Phad Metmamung</p>
                             <h4>Vihanneksia Cashew-pähkinää</h4><br>
-                    
+                      
                             <p class="text-grey">D7 Phad Khing Nya</p>
                             <h4>Vihanneksia herkkusieniä inkivääriä</h4><br>
-                    
+                      
                             <p class="text-grey">D8 Massaman Nya</p>
                             <h4>Massaman Curry kookosmaito Tomaatti</h4><br>
-                    
+                      
                             <p class="text-grey">D9 Nya Pad Prik Pau</p>
                             <h4>Chili kastike Vihannekset</h4><br>
-                    
+                      
                             <p class="text-grey">D10 Gäng Pet Nya</p>
                             <h4>Punacurry Ananas Paprika</h4><br>
-                    
+                      
                             <p class="text-grey">D11 Phanang Nya</p>
                             <h4>Phanangcurry papuja koo kosm ai dos sa</h4><br>
-                    
-                            </div>
-                        </div>
-                        <div class="col s6 tablink center">
-                            <div id="English-menu" class="w3-container menu w3-padding-48 w3-card">
+                      
+                    </div>
+                    <div id="English-menu" class="container menu padding-48 card">
                                 <h3>Chicken(A) / 10,00€</h3>
                                     
                                         <p class="txt-grey">A1 Gäng Curry Kai</p>
@@ -369,11 +351,8 @@
                         
                                         <p class="text-grey">D11 Phanang Nya</p>
                                         <h4>Phanang curry coconut milk vegetables</h4><br>  
-                            </div>
-                        </div>  
+                    </div>
                 </div>
-            </div>
-        </div>
     </div>
     <!--Where Container-->
     <div class="#"  id="where" style="background-color:#73eb37;">
@@ -395,14 +374,21 @@
 
 
     <script>
-        function openMenu(menuName) {
-          var i;
-          var x = document.getElementsByClassName("menu");
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
-          document.getElementById(menuName).style.display = "block";  
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " dark-grey";
         }
+        document.getElementById("myLink").click();
         </script>
 
 
