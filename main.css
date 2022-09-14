@@ -42,7 +42,6 @@ body,html {
 .Header {
     position: relative;
     text-align: center;
-    color: rgb(252, 102, 102);
     
   }
 
@@ -50,16 +49,16 @@ body,html {
     background-position: center;
     background-size: cover;
     background-image: url("./pictures/Thai_Asia_header.jpeg");
-    min-height: 75%;
+    min-height: 90%;
   } 
     
-  
-  .bottom-right {
+  .bottomright {
     position: absolute;
     bottom: 8px;
     right: 16px;
   }
-  .bottom-left {
+
+  .bottomleft {
     position: absolute;
     top: 8px;
     right: 16px;
