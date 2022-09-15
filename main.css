@@ -29,9 +29,6 @@ body,html {
     color: rgb(179, 6, 6);
 }
 
-.navbar-collapse {
-    justify-content: flex-end;
-}
 
 .sticky {
   position: fixed;
@@ -71,4 +68,9 @@ body,html {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-bottom: 200px;
+  }
+  button {
+    display: inline-block;
+    width: 100px;
+    
   }
