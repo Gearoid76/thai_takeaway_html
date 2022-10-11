@@ -9,31 +9,25 @@
 </head>
 <body>
   <div class="page-container">
-    <nav class="navbar sticky-top">
-       <img class="logo" src="./pictures/Take-away_logo.png"> 
-        <div class="collapse navbar-collapse" id="navbarNav">
+    <nav class="menu-logo">
+      <div class="logo">
+        <img class="logo" src="./pictures/Take-away_logo.png">
+      </div>
+      <div class="navbar">
           <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#menu">Menu</a>
-              </li>
-              <li>
-                <a href="#where">Where</a>
-              </li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#where">Where</a></li>
           </ul>
-        </div>
+      </div>
     </nav>
 
     <!-- Header with image -->
     <div class="clr"></div>
 <header id="home">
   <div class="picture-box">
-    <img src="./pictures/Thai_Asia_header.jpeg"> 
+   <img class="public-face" src="./pictures/Thai_Asia_header.jpeg"> 
       <h1>Thai restaraunt</h1>
       <h5 class="address">Ratamestarinkatu 15 Helsinki</h5>
       <h5 class="opening-hrs">Open from 11 to 19 / Sat Sun closed</h5>
@@ -41,10 +35,10 @@
 </header> 
 
     <!-- About Container -->
-    <div class="container" id="about">
-        <div class="content" style="max-width: 700px">
+    <div class="about-container">
+        <div class="content">
       
-            <h5>About Thai-Takeaway</span></h5>
+            <h3>About Thai-Takeaway</h3>
             <p>Situated what looks like a hole in the wall this elegent take-away is nested in between the greatist street
                 art that Helsinki has to offer.</p>
             <p>Having your favourate Thai foods in variety of flavours to cater to vegetarians,vegens and meatlovers alike.
@@ -60,18 +54,17 @@
     </div>
 
     <!--Menu Container-->
-    <div class="container" id="menu" style="padding-bottom:32px;">
-        <div class="content" style="max-width: 700px">
-            <h5 class="center padding-48 text-center"><span class="tag wide">THE MENU</span></h5>
-            <div class="row center card padding">
+    <div class="menu-container">
+            <h3>THE MENU</h3>
+            <div class="menu-card">
               <a href="javascript:void(0)" onclick="openMenu(event, 'Finnish-menu');" id="myLink">   
-                      <div class="col s6 tablink"><button>Fi-Menu</button></div>
+                      <div class="tablink"><button>Fi-Menu</button></div>
               </a>
               <a href="javascript:void(0)" onclick="openMenu(event, 'English-menu');" id="myLink">
-                        <div class="col s6 tablink"><button>Eng-Menu</button></div>
+                        <div class="tablink"><button>Eng-Menu</button></div>
               </a> 
             </div>
-                    <div id="Finnish-menu" class="container menu padding-48 card">
+                    <div id="Finnish-menu">
                             <h3>Kana(A) / 10,00€</h3>
                             <p class="text-grey">A1 Gäng Curry Kai</p>
                             <h4>Keltainen Curry Vihannekset ja Kookosmaito</h4><br>
@@ -207,7 +200,7 @@
                             <h4>Phanangcurry papuja koo kosm ai dos sa</h4><br>
                       
                     </div>
-                    <div id="English-menu" class="container menu padding-48 card">
+                    <div id="English-menu">
                                 <h3>Chicken(A) / 10,00€</h3>
                                     
                                         <p class="txt-grey">A1 Gäng Curry Kai</p>
@@ -345,23 +338,22 @@
                                         <p class="text-grey">D11 Phanang Nya</p>
                                         <h4>Phanang curry coconut milk vegetables</h4><br>  
                     </div>
-                </div>
+                
     </div>
     <!--Where Container-->
-    <div class="text-center p-3"  id="where" style="padding-bottom:32px;">
-      
-        <h5 class="center padding-48"><span class="tag wide">Where to find us</span></h5>
+    <div class="where-container">
+        <h3 class="center padding-48">Where to find us</h3>
         <p>Find us at Ratamesitarinkatu 3, Helsinki.</p>
         <p><strong>Opening hours:</strong> weekdays from 11am to 7pm. Weekend closed</p>
         <p><strong>Address:</strong> Ratamestarinkatu 3 Heslinki, Finland</p>
-        <img src="./pictures/Thai-takeaway_map.png" style="width:100%;max-width:1000px;margin-top:32px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1529.0628531290454!2d24.938769849715847!3d60.198123758675905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692098ffb523e33%3A0x5fa47a916b6de8b5!2sThai%20Asia%20Take%20Away!5e0!3m2!1sen!2sfi!4v1665500660704!5m2!1sen!2sfi" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <footer>
+        <div>
             © 2022 NOT Copyright:
-            <a class="text-dark" href="#">me and you </a>
+            <a class="text-dark" href="#"> where one does</a>
         </div>
     </footer>
   

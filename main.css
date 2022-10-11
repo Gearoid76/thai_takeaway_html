@@ -1,53 +1,64 @@
 body,html {
     padding: 0;
-    margin: 0;
-    height:100%;
-   
+    margin: 0;  
 }
 .page-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-header{
-  justify-content: right;
-}
-.navbar {
-    background:#99de6e;
-    overflow: hidden;
-}
-.logo{
-  height: 3em;
- 
-}
-.picture-box{
-  display: inline-block;
-  
-}
-.menu {
-  display: none;
-  overflow-y: scroll;
-  height: 700px;
-}
- a{
-  text-decoration: none;
- }
 
-.sticky {
+.navbar {
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #99de6e;
+}
+.menulogo {
+  display: flex;
+  justify-content: space-between;
+}
+.page-container {
+  margin-top: 30px;
 }
 
+nav {
+    background:#99de6e;
+    overflow: hidden;
+    text-decoration: none;
+    flex-direction: row;
+}
+li { 
+  display: inline;
+  padding-right: 2em;
+  text-decoration: none;
+}
+ul {
+justify-content: flex-end;
+}
+
+.logo{
+  height: 3em;
+}
+
+ a{
+  text-decoration: none;
+  align-items:flex-end;
+ }
+
 .Header {
+    display: flex;
+    align-items: center;
     position: relative;
-    text-align: center;
+    padding: .5em 4em;
   }
 
-  .picture-box{
+  .picture-box{ 
+    display: inline-block;
     margin-top: 2em;
-    width: 800px;
-    height:500px;
+    width: 100%;
+    height: auto;
     border:1px solid #000;
     position: relative;
 
@@ -55,24 +66,70 @@ header{
 .picture-box h1 {
     position: absolute;
     top: 5em;
+    text-align: center;
     left: 8.5em;
-    color: greenyellow;
+    color: white;
 }
 .picture-box .address {
     position: absolute;
     bottom: 1em;
-    left: 2em;
-    color: greenyellow
+    left: 1em;
+    color: white;
+    margin: 0;
 }
 .picture-box .opening-hrs {
   position: absolute;
   bottom: 1em;
-  right: -4em;
-  color: greenyellow;
+  right: 1em;
+  color: white;
+  margin: 0;
 }
+.public-face {
+  width: 100%;
+  height: auto;
 
+}
   button {
-    display: inline-block;
-    width: 100px;
+    background-color: rgb(106, 106, 106);
+    padding: 20px 30px;
+    color: white;
+    width: 200px; 
+  }
+
+  .about-container{
+   text-align: center;
+  }
+
+  .menu-container {
+    text-align: center;
+    padding-bottom:32px;
+    height:max-content;
+  }
+
+  .menu-card {
+    height: 1000;
+    width: 43.75em;
+    background-color: aqua; 
+  }
+  .Finnish-menu {
+    width: 20em;
+    height: 50em;
+    overflow-y: scroll;
+  }
+  .English-menu {
+    width: 20em;
+    height: 50em;
+    overflow-y: scroll;
+  }
+  
+  .where-container{
+    text-align: center;
+    padding-bottom:32px;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4em;
+    text-align: center;
     
   }
