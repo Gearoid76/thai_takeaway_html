@@ -4,31 +4,34 @@ body,html {
     height:100%;
    
 }
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header{
+  justify-content: right;
+}
 .navbar {
-    background:#fc3802;
+    background:#99de6e;
     overflow: hidden;
 }
-
+.logo{
+  height: 3em;
+ 
+}
+.picture-box{
+  display: inline-block;
+  
+}
 .menu {
   display: none;
   overflow-y: scroll;
   height: 700px;
 }
-
-.nav-link,
-.navbar-brand {
-    color: #fff;
-    cursor: pointer;
-}
-
-.nav-link {
-    margin-right: 1em !important;
-}
-
-.nav-link:hover {
-    color: rgb(179, 6, 6);
-}
-
+ a{
+  text-decoration: none;
+ }
 
 .sticky {
   position: fixed;
