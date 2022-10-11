@@ -52,20 +52,23 @@ header{
     position: relative;
 
 }
-.pictue-box h1 {
+.picture-box h1 {
     position: absolute;
     top: 5em;
-    left: 7em;
+    left: 8.5em;
+    color: greenyellow;
 }
 .picture-box .address {
     position: absolute;
     bottom: 1em;
     left: 2em;
+    color: greenyellow
 }
 .picture-box .opening-hrs {
   position: absolute;
   bottom: 1em;
-  right: 2em;
+  right: -4em;
+  color: greenyellow;
 }
 
   button {
