@@ -41,34 +41,30 @@ body,html {
     text-align: center;
   }
 
-  .bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("./pictures/Thai_Asia_header.jpeg");
-    min-height: 75%;
-  } 
-    
-  .bottomright {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    padding-bottom: 200px;
-  }
+  .picture-box{
+    margin-top: 2em;
+    width: 800px;
+    height:500px;
+    border:1px solid #000;
+    position: relative;
 
-  .bottomleft {
+}
+.pictue-box h1 {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
-    padding-bottom: 200px;
-  }
-  
-  .centered {
+    top: 5em;
+    left: 7em;
+}
+.picture-box .address {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-bottom: 200px;
-  }
+    bottom: 1em;
+    left: 2em;
+}
+.picture-box .opening-hrs {
+  position: absolute;
+  bottom: 1em;
+  right: 2em;
+}
+
   button {
     display: inline-block;
     width: 100px;
