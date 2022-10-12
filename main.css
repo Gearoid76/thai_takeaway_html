@@ -7,28 +7,34 @@ body,html {
   flex-direction: column;
   justify-content: center;
 }
+.menu-and-logo {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  background-color: #000;
+}
+nav {
+  /*Thai Asia logo is here*/
+  display: flex;
+  /*background:#99de6e; */
+ 
+}
 
 .navbar {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 50%;
+  align-content: center;
   background-color: #99de6e;
-}
-.menulogo {
-  display: flex;
   justify-content: space-between;
+  
 }
+
 .page-container {
   margin-top: 30px;
 }
 
-nav {
-    background:#99de6e;
-    overflow: hidden;
-    text-decoration: none;
-    flex-direction: row;
-}
 li { 
   display: inline;
   padding-right: 2em;
