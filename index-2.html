@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>index-2 with bootstrap</title>
+    <title>index-2 vanilla</title>
     <link rel="stylesheet" type="text/css" href="./main.css">         
 </head>
 <body>
   <div class="page-container">
     <nav>
       <div class="menu-and-logo">
-          <div class="logo">
-            <img class="logo" src="./pictures/Take-away_logo.png">
-          </div>
+
           <div class="navbar">
+            <img class="logo" src="./pictures/Take-away_logo.png">
               <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#about">About</a></li>
@@ -30,7 +29,7 @@
 <header id="home">
   <div class="picture-box">
    <img class="public-face" src="./pictures/Thai_Asia_header.jpeg"> 
-      <h1>Thai restaraunt</h1>
+      <h1 class="name-of-restaraunt">Thai Asia restaraunt</h1>
       <h5 class="address">Ratamestarinkatu 15 Helsinki</h5>
       <h5 class="opening-hrs">Open from 11 to 19 / Sat Sun closed</h5>
   </div>
@@ -49,7 +48,7 @@
                 <p><i>"It's never too early, nor too late to eat Thai-food" Fresh is the new sweet.</i></p>
                 <p>Chef, Thai-takeaway</p>
             </div>
-        <!--<img src="#" style="width:100%"> -->
+        <!--<img src="#" style="width:100% put image here"> -->
         <p><strong>Opening hours:</strong> weekdays from 11am to 7pm. Weekend closed</p>
         <p><strong>Address:</strong>Ratamestarinkatu 3 Heslinki, Finland</p>
         </div>
@@ -58,15 +57,11 @@
     <!--Menu Container-->
     <div class="menu-container">
             <h3>THE MENU</h3>
-            <div class="menu-card">
-              <a href="javascript:void(0)" onclick="openMenu(event, 'Finnish-menu');" id="myLink">   
-                      <div class="tablink"><button>Fi-Menu</button></div>
-              </a>
-              <a href="javascript:void(0)" onclick="openMenu(event, 'English-menu');" id="myLink">
-                        <div class="tablink"><button>Eng-Menu</button></div>
-              </a> 
-            </div>
-                    <div id="Finnish-menu">
+          <div class="tab">
+            <button class="tablinks" onclick="openMenu(event, 'Finnish-menu')" id=""defaultOpen>Finnish Menu</button>
+            <button class="tablinks" onclick="openMenu(event, 'English-menu')">English Menu</button>
+          </div>
+                    <div id="Finnish-menu" class="tabcontent">
                             <h3>Kana(A) / 10,00€</h3>
                             <p class="text-grey">A1 Gäng Curry Kai</p>
                             <h4>Keltainen Curry Vihannekset ja Kookosmaito</h4><br>
@@ -202,7 +197,7 @@
                             <h4>Phanangcurry papuja koo kosm ai dos sa</h4><br>
                       
                     </div>
-                    <div id="English-menu">
+                    <div id="English-menu" class="tabcontent">
                                 <h3>Chicken(A) / 10,00€</h3>
                                     
                                         <p class="txt-grey">A1 Gäng Curry Kai</p>
@@ -365,22 +360,22 @@
 
 
     <script>
-        // Tabbed Menu
+        document.getElementById(defaultOpen).click();
         function openMenu(evt, menuName) {
-          var i, x, tablinks;
-          x = document.getElementsByClassName("menu");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
-          }
-          document.getElementById(menuName).style.display = "block";
-          evt.currentTarget.firstElementChild.className += " dark-grey";
+          var i,tabcontent, tablinks;
+        
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for(i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
         }
-        document.getElementById("myLink").click();
-        </script>
+        tablinks = document.getElementsByClassName("tablinks");
+        for(i= 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "")
+        }
+        document.getElementById(menuName).style.display= "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
 
 
 

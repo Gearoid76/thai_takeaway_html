@@ -11,20 +11,17 @@ body,html {
   display: flex;
   overflow: hidden;
   flex-direction: row;
-  background-color: #000;
 }
+
 nav {
-  /*Thai Asia logo is here*/
   display: flex;
-  /*background:#99de6e; */
- 
 }
 
 .navbar {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 50%;
+  width: 100%;
   align-content: center;
   background-color: #99de6e;
   justify-content: space-between;
@@ -73,7 +70,6 @@ justify-content: flex-end;
     position: absolute;
     top: 5em;
     text-align: center;
-    left: 8.5em;
     color: white;
 }
 .picture-box .address {
@@ -95,38 +91,45 @@ justify-content: flex-end;
   height: auto;
 
 }
-  button {
-    background-color: rgb(106, 106, 106);
-    padding: 20px 30px;
-    color: white;
-    width: 200px; 
-  }
-
   .about-container{
    text-align: center;
   }
+.menu-container {
+  text-align: center;
+  padding-bottom: 2em;
+  height: 25em;
+  border-bottom: 2em;
+}
 
-  .menu-container {
-    text-align: center;
-    padding-bottom:32px;
-    height:max-content;
-  }
 
-  .menu-card {
-    height: 1000;
-    width: 43.75em;
-    background-color: aqua; 
+  /*style the tab */
+  .tab{
+    overflow: hidden;
+    border: 1px solid #ccc;
   }
-  .Finnish-menu {
-    width: 20em;
-    height: 50em;
-    overflow-y: scroll;
-  }
-  .English-menu {
-    width: 20em;
-    height: 50em;
-    overflow-y: scroll;
-  }
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: #99de6e;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(209, 104, 104);
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(198, 24, 24);
+  border-top: none;
+}
+ 
+
   
   .where-container{
     text-align: center;
