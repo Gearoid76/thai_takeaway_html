@@ -112,6 +112,7 @@ ul {
   cursor: pointer;
   padding: 1em;
   border: 5em;
+  margin-bottom: 2em;
 }
 
 /* Style the tab content */
