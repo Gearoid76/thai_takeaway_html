@@ -38,7 +38,7 @@ li {
   text-decoration: none;
 }
 ul {
-justify-content: flex-end;
+  justify-content: flex-end;
 }
 .logo{
   height: 3em;
@@ -46,33 +46,33 @@ justify-content: flex-end;
  a{
   text-decoration: none;
   align-items:flex-end;
- }
+}
 .Header {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: .5em 4em;
-  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: .5em 4em;
+}
   .picture-box{ 
-    display: inline-block;
-    margin-top: 2em;
-    width: 100%;
-    height: auto;
-    border:1px solid #000;
-    position: relative;
+  display: inline-block;
+  margin-top: 2em;
+   width: 100%;
+  height: auto;
+  border:1px solid #000;
+  position: relative;
 }
 .picture-box h1 {
-    position: absolute;
-    top: 5em;
-    text-align: center;
-    color: white;
+  position: absolute;
+  top: 5em;
+  text-align: center;
+  color: white;
 }
 .picture-box .address {
-    position: absolute;
-    bottom: 1em;
-    left: 1em;
-    color: white;
-    margin: 0;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  color: white;
+  margin: 0;
 }
 .picture-box .opening-hrs {
   position: absolute;
@@ -85,9 +85,9 @@ justify-content: flex-end;
   width: 100%;
   height: auto;
 }
-  .about-container{
-   text-align: center;
-  }
+.about-container{
+  text-align: center;
+}
 #menu-container {
   text-align: center;
   padding-bottom: 2em;
@@ -100,10 +100,9 @@ justify-content: flex-end;
   align-items: center;
 }
   /*style the tab */
-  .tab{
-    overflow: hidden;
-    border: 1px solid rgb(224, 224, 224);
-  }
+.tab{
+  overflow: hidden;
+}
   /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: #99de6e;
@@ -113,32 +112,27 @@ justify-content: flex-end;
   cursor: pointer;
   padding: 1em;
   border: 5em;
-  transition: 0.3s;
 }
-/* Change background color of buttons on hover */
-.tab button :hover {
-  background-color: rgb(209, 104, 104);
-}
+
 /* Style the tab content */
 .tabcontent {
-  float: center;
-  text-align: center;
-  width: 70%;
+  width: 90%;
   display: none;
   padding: 6px 12px;
   border-top: none;
   height: 50em;
   overflow-y: scroll;
+  margin-left: 5%;
 }
 
-  .where-container{
-    text-align: center;
-    padding-bottom:32px;
-  }
+.where-container{
+  text-align: center;
+  padding-bottom:32px;
+  
+}
 
-  footer {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 4em;
-    text-align: center;
-    
-  }
+footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 4em;
+  text-align: center; 
+}
