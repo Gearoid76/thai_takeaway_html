@@ -13,6 +13,7 @@ body,html {
   flex-direction: row;
 }
 
+
 nav {
   display: flex;
 }
@@ -25,7 +26,11 @@ nav {
   align-content: center;
   background-color: #99de6e;
   justify-content: space-between;
-  
+}
+.navbar a {
+  float: right;
+  text-align: center;
+  padding: 0 2em;
 }
 
 .page-container {
@@ -42,6 +47,7 @@ ul {
 }
 .logo{
   height: 3em;
+  float: left;
 }
  a{
   text-decoration: none;
@@ -63,9 +69,10 @@ ul {
 }
 .picture-box h1 {
   position: absolute;
-  top: 5em;
-  text-align: center;
+  top: 3.5em;
+  left: 5em;
   color: white;
+  font-size: 90px;
 }
 .picture-box .address {
   position: absolute;
