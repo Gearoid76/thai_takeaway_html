@@ -40,23 +40,19 @@ li {
 ul {
 justify-content: flex-end;
 }
-
 .logo{
   height: 3em;
 }
-
  a{
   text-decoration: none;
   align-items:flex-end;
  }
-
 .Header {
     display: flex;
     align-items: center;
     position: relative;
     padding: .5em 4em;
   }
-
   .picture-box{ 
     display: inline-block;
     margin-top: 2em;
@@ -64,7 +60,6 @@ justify-content: flex-end;
     height: auto;
     border:1px solid #000;
     position: relative;
-
 }
 .picture-box h1 {
     position: absolute;
@@ -89,7 +84,6 @@ justify-content: flex-end;
 .public-face {
   width: 100%;
   height: auto;
-
 }
   .about-container{
    text-align: center;
@@ -105,12 +99,10 @@ justify-content: flex-end;
   text-align: center;
   align-items: center;
 }
-
-
   /*style the tab */
   .tab{
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(224, 224, 224);
   }
   /* Style the buttons that are used to open the tab content */
 .tab button {
