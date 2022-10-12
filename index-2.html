@@ -58,7 +58,7 @@
     <div class="menu-container">
         <h3>THE MENU</h3>
           <div class="tab">
-            <button class="tablinks" onclick="openMenu(event, 'Finnish-menu')" id=""defaultOpen>Finnish Menu</button>
+            <button class="tablinks" onclick="openMenu(event, 'Finnish-menu')" id="defaultOpen">Finnish Menu</button>
             <button class="tablinks" onclick="openMenu(event, 'English-menu')">English Menu</button>
           </div>
                     <div id="Finnish-menu" class="tabcontent">
@@ -360,7 +360,6 @@
 
 
     <script>
-        document.getElementById(defaultOpen).click();
         function openMenu(evt, menuName) {
           var i,tabcontent, tablinks;
         
@@ -374,6 +373,7 @@
         }
         document.getElementById(menuName).style.display= "block";
         evt.currentTarget.className += " active";
+        document.getElementById(defaultOpen).click();
       }
     </script>
 

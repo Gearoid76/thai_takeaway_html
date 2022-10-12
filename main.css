@@ -99,6 +99,11 @@ justify-content: flex-end;
   padding-bottom: 2em;
   height: 25em;
   border-bottom: 2em;
+  padding-left: 4em;
+}
+.menu-container {
+  text-align: center;
+  align-items: center;
 }
 
 
@@ -110,12 +115,12 @@ justify-content: flex-end;
   /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: #99de6e;
-  float: left;
+  float: center;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  border: .5em;
+  padding: 1em;
+  border: 5em;
   transition: 0.3s;
 }
 /* Change background color of buttons on hover */
