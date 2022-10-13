@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body,html {
     padding: 0;
     margin: 0;  
@@ -12,12 +16,9 @@ body,html {
   overflow: hidden;
   flex-direction: row;
 }
-
-
 nav {
   display: flex;
 }
-
 .navbar {
   overflow: hidden;
   position: fixed;
@@ -30,13 +31,11 @@ nav {
 .navbar a {
   float: right;
   text-align: center;
-  padding: 0 2em;
+  padding: 1em 2em;
 }
-
 .page-container {
   margin-top: 30px;
 }
-
 li { 
   display: inline;
   padding-right: 2em;
@@ -61,10 +60,9 @@ ul {
 }
   .picture-box{ 
   display: inline-block;
-  margin-top: 2em;
+  margin-top: 1em;
    width: 100%;
   height: auto;
-  border:1px solid #000;
   position: relative;
 }
 .picture-box h1 {
@@ -88,12 +86,18 @@ ul {
   color: white;
   margin: 0;
 }
-.public-face {
+                /* public face is the pictue in the picture-box */
+.public-face {  
   width: 100%;
   height: auto;
 }
 .about-container{
   text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+blockquote{
+  padding: 1em;
 }
 #menu-container {
   text-align: center;
@@ -106,7 +110,6 @@ ul {
   text-align: center;
   align-items: center;
 }
-  /*style the tab */
 .tab{
   overflow: hidden;
 }
@@ -122,7 +125,6 @@ ul {
   margin-bottom: 2em;
 }
 
-/* Style the tab content */
 .tabcontent {
   width: 90%;
   display: none;
@@ -135,8 +137,10 @@ ul {
 
 .where-container{
   text-align: center;
-  padding-bottom:32px;
-  
+  padding-bottom:4em 2em; 
+}
+iframe{
+  padding: 1em;
 }
 
 footer {
