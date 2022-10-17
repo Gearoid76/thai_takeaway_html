@@ -11,11 +11,13 @@ body,html {
   flex-direction: column;
   justify-content: center;
 }
-.menu-and-logo {
+.wrapper {
   display: flex;
   overflow: hidden;
   flex-direction: row;
 }
+
+
 nav {
   display: flex;
 }
@@ -27,6 +29,7 @@ nav {
   align-content: center;
   background-color: #99de6e;
   justify-content: space-between;
+  transition: all 0.3s ease;
 }
 .navbar a {
   float: right;
@@ -52,11 +55,17 @@ ul {
   text-decoration: none;
   align-items:flex-end;
 }
-.Header {
+.fa-bars {
+  float:right;
+
+}
+
+header {
   display: flex;
   align-items: center;
   position: relative;
-  padding: .5em 4em;
+  /*background-image: url('./pictures/Thai_Asia_header.jpeg');  here from the html side
+  https://codepen.io/mayursuthar/pen/gmGVJy check it out. */
 }
   .picture-box{ 
   display: inline-block;
