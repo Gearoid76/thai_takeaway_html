@@ -1,6 +1,3 @@
-/* most part is for styling, and you can safely ignore it */
-/* comments are placed wherever necessary */
-
 *,
 *::before,
 *::after {
@@ -44,6 +41,7 @@ a {
 .nav__menucontainer {
   position: relative;
 }
+
 
 .nav__hamburger {
   color: inherit;
