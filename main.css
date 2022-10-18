@@ -4,7 +4,8 @@
 }
 body,html {
     padding: 0;
-    margin: 0;  
+    margin: 0;
+    font-size: 16px;  
 }
 .page-container {
   display: flex;
@@ -16,7 +17,10 @@ body,html {
   overflow: hidden;
   flex-direction: row;
 }
-
+.logo{
+  height: 3em;
+  float: left;
+}
 
 nav {                             
   overflow: hidden;
@@ -39,14 +43,14 @@ nav {
 .nav .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .nav a:not(:first-child) {display: none;}
   .nav a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5) {
   .nav.responsive {position: relative;}
   .nav.responsive .icon {
     position: absolute;
@@ -60,20 +64,12 @@ nav {
   }
 }
 
-li {                                -->
-  display: inline;
-  padding-right: 2em;
-  text-decoration: none;
-}
-ul {
-  justify-content: flex-end;          -->
-}
 .logo{
   height: 3em;
   float: left;
 }
 
- a{                                   -->
+ a{                                   
   text-decoration: none;
   align-items:flex-end;
 }
@@ -82,8 +78,7 @@ header {
   display: flex;
   align-items: center;
   position: relative;
-  /*background-image: url('./pictures/Thai_Asia_header.jpeg');  here from the html side
-  https://codepen.io/mayursuthar/pen/gmGVJy check it out. */
+  
 }
   .picture-box{ 
   display: inline-block;
@@ -92,11 +87,11 @@ header {
   position: relative;
 }
 .picture-box h1 {
-  position: absolute;
+  *position: absolute; 
   top: 3.5em;
   left: 5em;
   color: white;
-  font-size: 90px;
+  font-size: 5.625;
 }
 .picture-box .address {
   position: absolute;
@@ -154,7 +149,7 @@ blockquote{
 .tabcontent {
   width: 90%;
   display: none;
-  padding: 6px 12px;
+  padding: .375 .75;
   border-top: none;
   height: 50em;
   overflow-y: scroll;
@@ -173,15 +168,4 @@ footer {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 4em;
   text-align: center; 
-}
-/* 41.875em = 670px*/
-@media only screen and (max-width: 41.875em)  { 
-  .navbar a{
-    display: none
-  }
-  .hamburger{
-    height: 1em;
-    float: right;
-    padding-right: 1em;
-}
 }
