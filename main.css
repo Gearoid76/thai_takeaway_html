@@ -51,13 +51,15 @@ ul {
   height: 3em;
   float: left;
 }
+
+.hamburger{
+  height: 1em;
+  float: right;
+  display: none;
+} 
  a{
   text-decoration: none;
   align-items:flex-end;
-}
-.fa-bars {
-  float:right;
-
 }
 
 header {
@@ -156,4 +158,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 4em;
   text-align: center; 
+}
+@media only screen and (max-width: 670px)  {
+  .navbar a{
+    display: none
+  }
+  .hamburger{
+    height: 1em;
+    float: right;
+    padding-right: 1em;
 }

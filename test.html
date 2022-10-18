@@ -6,26 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hamburger menu</title>
   <link rel="stylesheet" href="./test.css">
-  <link rel="stylesheet" href="">
 </head>
 <body>
-  <nav>
-    <div class="logo"></div>
-    <div class="openMenu"><i class=""fa fa-bars></i></div>
-    <ul class="mainMenu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">products</a></li>
-      <li><a href="#">help</a></li>
-      <li><a href="#">help</a></li>
-      <div class="closeMenu"><i class="fa fa-times"></i></div>
-      <span class="icons">
-        <i class="fab fa-faceboo"></i>
-        <i class="fab"></i>
-        <i class="fab"></i>
-        <i class="fab"></i>
-      </span>
-      
-    </ul>
+  <nav id="hamnav">
+    <!-- (B) THE HAMBURGER -->
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+   
+    <!-- (C) MENU ITEMS -->
+    <div id="hamitems">
+      <a href="a.html">First</a>
+      <a href="b.html">Second</a>
+      <a href="c.html">Third</a>
+      <a href="d.html">Forth</a>
+    </div>
   </nav>
     <script src="./app.js"></script>
 </body>
