@@ -10,15 +10,17 @@
 </head>
 <body>
   <div class="page-container">
-    <nav class="nav" id="myNav">
+    <nav class="nav">
       <img class="logo" src="./pictures/Take-away_logo.png">
-      <a class="active" href="#home">Home</a>
-      <a href="#about-container">About</a>
-      <a href="#menu-container">Menu</a>
-      <a href="#where-container">Where</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+    <div class="topnav" id="myNav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#where">Where</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
 
 
@@ -34,7 +36,7 @@
 </header> 
 
     <!-- About Container -->
-    <div class="about-container">
+    <div class="about-container"id="about">
         <div class="content">
             <h3>About Thai-Takeaway</h3>
             <p>Situated what looks like a hole in the wall this elegent take-away is nested in between the greatist street
@@ -55,7 +57,7 @@
     </div>
 
     <!--Menu Container-->
-    <div class="menu-container">
+    <div class="menu-container" id="menu">
         <h3>THE MENU</h3>
           <div class="tab">
             <button class="tablinks" onclick="openMenu(event, 'Finnish-menu')" id="defaultOpen">Finnish Menu</button>
@@ -338,7 +340,7 @@
                 
     </div>
     <!--Where Container-->
-    <div class="where-container">
+    <div class="where-container"id="where">
         <h3 class="center padding-48">Where to find us</h3>
         <p>Find us at Ratamesitarinkatu 3, Helsinki.</p>
         <p><strong>Opening hours:</strong> weekdays from 11am to 7pm. Weekend closed</p>

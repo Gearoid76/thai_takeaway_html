@@ -26,6 +26,9 @@ nav {
   overflow: hidden;
   background-color: #99de6e;
 }
+.nav #myNav{
+  display: none;
+}
 
 .nav a {
   float: right;
@@ -52,7 +55,7 @@ nav {
 }
 @media screen and (max-width: 37.5) {
   .nav.responsive {position: relative;}
-  .nav.responsive .icon {
+  .nav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
