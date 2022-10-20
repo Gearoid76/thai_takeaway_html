@@ -21,27 +21,27 @@ body,html {
   height: 3em;
   float: left;
   background-color: #99de6e;
-  color: white;
 }
 
 topnav {                             
   overflow: hidden;
   background-color: #99de6e;
-  position: relative;
 }
-.topnav #myLinks{     /* was myNav */
+.topnav #myLinks{   
   display: none;
 }
 
 .topnav a {
+  float: left;
+  display: block;
+  color: black;
   background-color: #99de6e;
-  color: #aaa;
+  text-align: center;
   padding: 1em 2em;
   text-decoration: none;
   font-size: 1em;
   display: block;
-  /*float: right;*/
-  text-align: center;
+  float: left;
 }
 topnav a.icon{
   background: black;
@@ -96,11 +96,11 @@ header {
   position: relative;
 }
 .picture-box h1 {
-  *position: absolute; 
+  position: absolute; 
   top: 3.5em;
   left: 5em;
   color: white;
-  font-size: 5.625;
+  font-size: 5.625em;
 }
 .picture-box .address {
   position: absolute;
