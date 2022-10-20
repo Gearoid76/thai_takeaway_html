@@ -1,51 +1,181 @@
-
-body {
+* {
   padding: 0;
   margin: 0;
-  height: 100%;
-  background: #f2f6e9;
 }
-.navbar {
-  background:#fc3802;
+body,html {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;  
 }
-.nav-link,
-.navbar-brand {
-  color: #fff;
-  cursor: pointer;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.nav-link {
-  margin-right: 1em !important;
+.wrapper {                     
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
 }
-.nav-link:hover {
-  color: #000;
+.active{
+  height: 3em;
+  float: left;
+  background-color: #99de6e;
 }
-.navbar-collapse {
-  justify-content: flex-end;
+img .active {
+  padding: 0;
 }
 
-.Header {
-  position: relative;
+.topnav {                             
+  overflow: hidden;
+  background-color: #99de6e;
+}
+.topnav .link{   
+  float: right;
+  padding: 1em;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  background-color: #99de6e;
   text-align: center;
-  color: rgb(252, 102, 102);
-  size: 75%;
+  padding: 0 2em;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  float: left;
+}
+topnav a.icon{
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 37.5em) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
+ a{                                   
+  text-decoration: none;
+  align-items:flex-end;
 }
 
-.bottom-right {
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+}
+  .picture-box{ 
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.picture-box h1 {
+  position: absolute; 
+  top: 3.5em;
+  left: 5em;
+  color: white;
+  font-size: 5.625em;
+}
+.picture-box .address {
   position: absolute;
-  bottom: 8px;
-  right: 16px;
+  bottom: 1em;
+  left: 1em;
+  color: white;
+  margin: 0;
+}
+.picture-box .opening-hrs {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  color: white;
+  margin: 0;
+}
+                /* public face is the pictue in the picture-box */
+.public-face {  
+  width: 100%;
+  height: auto;
+}
+.about-container{
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+blockquote{
+  padding: 1em;
+}
+#menu-container {
+  text-align: center;
+  padding-bottom: 2em;
+  height: 25em;
+  border-bottom: 2em;
+  padding-left: 4em;
+}
+.menu-container {
+  text-align: center;
+  align-items: center;
+}
+.tab{
+  overflow: hidden;
+}
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: #99de6e;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1em;
+  border: 5em;
+  margin-bottom: 2em;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 90px;
+.tabcontent {
+  width: 90%;
+  display: none;
+  padding: .375 .75;
+  border-top: none;
+  height: 50em;
+  overflow-y: scroll;
+  margin-left: 5%;
+}
+
+.where-container{
+  text-align: center;
+  padding-bottom:4em 2em; 
+}
+iframe{
+  padding: 1em;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 4em;
+  text-align: center; 
 }
