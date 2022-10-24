@@ -18,7 +18,7 @@ body,html {
   flex-direction: row;
 }
 .active{
-
+  height: 3em;
   background-color: #99de6e;
 }
 img .active {
@@ -163,6 +163,7 @@ blockquote{
   height: 50em;
   overflow-y: scroll;
   margin-left: 5%;
+  background-color: rgb(224, 255, 196);
 }
 
 .where-container{
