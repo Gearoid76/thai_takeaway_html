@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
-<body>
+<body onload="document.getElementById('defaultOpen').click();">
   <div class="page-container">
     <div class="topnav" id="myTopnav">
        <a href="#home" class="active"><img class="active" src="./pictures/Take-away_logo.png"></a>
@@ -55,7 +55,7 @@
     <div class="menu-container" id="menu">
         <h3>THE MENU</h3>
           <div class="tab">
-            <button class="tablinks" onclick="openMenu(event, 'Finnish-menu')" id="defaultOpen">Finnish Menu</button>
+            <button class="tablinks active" onclick="openMenu(event, 'Finnish-menu')" id="defaultOpen">Finnish Menu</button>
             <button class="tablinks" onclick="openMenu(event, 'English-menu')">English Menu</button>
           </div>
                     <div id="Finnish-menu" class="tabcontent">
@@ -373,8 +373,8 @@
         }
         document.getElementById(menuName).style.display= "block";
         evt.currentTarget.className += " active";
-        document.getElementById(defaultOpen).click();
       }
+      document.getElementById(defaultOpen).click();
     </script>
 
 
