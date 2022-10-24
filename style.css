@@ -19,7 +19,6 @@ body,html {
 }
 .active{
   height: 3em;
-  float: left;
   background-color: #99de6e;
 }
 img .active {
