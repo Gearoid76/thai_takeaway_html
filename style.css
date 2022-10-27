@@ -21,6 +21,8 @@ body,html {
   height: 3em;
   background-color: #99de6e;
 }
+
+
 img .active {
   padding: 0;
 }
@@ -78,10 +80,13 @@ topnav a.icon{
     text-align: left;
   }
 }
-/* 22.5 = 360px */
+/*Galaxy S5 22.5 = 360px */
 @media screen and (max-width: 22.5em) {
   .tabcontent {
     width: 70%;
+}
+.iframe-container{
+  overflow: visible;
 }
 }
  a{                                   
@@ -143,7 +148,8 @@ blockquote{
 }
 .menu-container {
   text-align: center;
-  align-items: center;
+  padding: 2em 5em;
+  
 }
 .tab{
   overflow: hidden;
@@ -173,7 +179,10 @@ blockquote{
 
 .where-container{
   text-align: center;
-  padding:2em 5em; 
+  padding:2em 5em;
+}
+.where-text {
+  padding-bottom: 1em;
 }
 .iframe-container {
   overflow: hidden;
