@@ -123,8 +123,7 @@ header {
 }
 .about-container{
   text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 5em;
 }
 blockquote{
   padding: 1em;
@@ -156,19 +155,19 @@ blockquote{
 }
 
 .tabcontent {
-  width: 90%;
+  width: 50%;
   display: none;
   padding: .375 .75;
   border-top: none;
   height: 50em;
   overflow-y: scroll;
-  margin-left: 5%;
+  margin-left: 25%;
   background-color: rgb(224, 255, 196);
 }
 
 .where-container{
   text-align: center;
-  padding-bottom:4em 2em; 
+  padding:4em 2em; 
 }
 .iframe-container {
   overflow: hidden;
@@ -178,7 +177,7 @@ blockquote{
 .iframe-container iframe{
   border: 0;
   height: 100%;
-  left: 0;
+  left: 2em;
   position: absolute;
   top: 0;
   width: 100%;
