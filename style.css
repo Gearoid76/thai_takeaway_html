@@ -167,13 +167,13 @@ blockquote{
 }
 
 .tabcontent {
-  width: 50%;
+  width: 20%;
   display: none;
   padding: .375 .75;
   border-top: none;
   height: 50em;
   overflow-y: scroll;
-  margin-left: 25%;
+  margin-left: 40%;
   background-color: rgb(224, 255, 196);
 }
 
@@ -191,14 +191,11 @@ blockquote{
 }
 .iframe-container iframe{
   border: 0;
-  height: 100%;
+  height: 90%;
   left: 2em;
   position: absolute;
   top: 0;
-  width: 100%;
- 
-  
-  
+  width: 90%;
 }
 
 footer {
