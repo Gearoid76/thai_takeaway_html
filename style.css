@@ -191,11 +191,9 @@ blockquote{
 }
 .iframe-container iframe{
   border: 0;
-  height: 90%;
   left: 2em;
   position: absolute;
   top: 0;
-  width: 90%;
 }
 
 footer {
