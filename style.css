@@ -42,7 +42,7 @@ img .active {
   color: black;
   background-color: #99de6e;
   text-align: center;
-  padding: 0 2em;
+  padding: 0 1em;
   text-decoration: none;
   font-size: 1em;
   display: block;
@@ -170,7 +170,7 @@ blockquote{
 .tabcontent {
   width: 20%;
   display: none;
-  padding: .375 .75;
+  padding: .375em .75em;
   border-top: none;
   height: 50em;
   overflow-y: scroll;
