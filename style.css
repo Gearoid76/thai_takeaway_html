@@ -148,7 +148,7 @@ blockquote{
   padding-left: 4em;
 }
 .menu-container {
-  text-align: center;
+  text-align: center; /* left */
   padding: 2em 5em;
   
 }
@@ -168,13 +168,14 @@ blockquote{
 }
 
 .tabcontent {
-  width: 20%;
+  width: 100%;
+  max-width: 500px;
   display: none;
   padding: .375em .75em;
   border-top: none;
   height: 50em;
   overflow-y: scroll;
-  margin-left: 40%;
+  margin-left: 0 auto;
 }
 
 .where-container{
