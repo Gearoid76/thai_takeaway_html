@@ -80,6 +80,13 @@ topnav a.icon{
     display: block;
     text-align: left;
   }
+  .about-container {
+    max-width: 600px;
+  }
+  .menu-container {
+    max-width: 600px;
+    padding: 1em;
+  }
 }
 /*Galaxy S5 22.5 = 360px */
 @media screen and (max-width: 22.5em) {
