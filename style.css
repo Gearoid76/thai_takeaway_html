@@ -217,33 +217,7 @@ header {
   height: auto;
   position: relative;
 }
-.picture-box h1 {
-  position: absolute; 
-  top: 50%;
-  left: 50%;
-  color: white;
-  font-size: large;
-  transform: translate(-50%, -50%);
-}
-.picture-box .address {
-  position: absolute;
-  bottom: 1em;
-  left: 1em;
-  color: white;
-  margin: 0;
-}
-.picture-box .opening-hrs {
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-  color: white;
-  margin: 0;
-}
-                /* public face is the pictue in the picture-box */
-.public-face {  
-  width: 100%;
-  height: auto;
-}
+
 .about-container{
   text-align: center;
   padding: 2em 5em;
