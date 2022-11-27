@@ -91,9 +91,9 @@ body,html {
 
 @media screen and (max-width: 50rem){
   .grid-container{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
   }
-  .w-2,.w-3.w-4,.w-5,.w-6 { 
+  .w-2, .w-3.w-4, .w-5, .w-6 { 
     grid-column: span 1;
   }
 }
@@ -124,7 +124,6 @@ body,html {
   height: 3rem;
   background-color: #99de6e;
 }
-
 
 img .active {
   padding: 0;
@@ -207,7 +206,7 @@ topnav a.icon{
   overflow: visible;
   }
 }
- a{                                   
+ a {                                   
   text-decoration: none;
   align-items:flex-end;
 }
@@ -219,9 +218,10 @@ header {
   
 }
  
-.about-container{
+.about-container {
   text-align: center;
   padding: 2rem 5rem;
+  font-size: initial;
 }
 blockquote{
   padding: 1rem;
@@ -322,5 +322,6 @@ h4{
 footer {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 3.2rem;
-  text-align: center; 
+  text-align: center;
+  font-size: initial; 
 }
