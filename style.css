@@ -13,7 +13,7 @@ body,html {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  grid-auto-rows: 10rem 30rem;
+  grid-auto-rows: 30rem;
   grid-gap:1rem;
   grid-auto-flow: dense;
 }
