@@ -184,12 +184,12 @@ topnav a.icon{
     font-size: initial;
   }
   .about-container {
-    max-width: 60rem;
+  /*max-width: 60rem; */
     padding: 1.6rem;
     font-size: initial;
   }
   .menu-container {
-    max-width: 60rem;
+   /* max-width: 60rem; */
     padding: 1.6rem;
   }
   .tab button {
