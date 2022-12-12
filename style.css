@@ -10,24 +10,24 @@ body,html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;  
 }
-.grid-container {
+.grid--container {
   display: grid;
   grid-template-columns: repeat(6,1fr);
   grid-auto-rows: 30rem;
   grid-gap:1rem;
   grid-auto-flow: dense;
 }
-.gallery-item {
+.gallery--item {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.gallery-item .image {
+.gallery--item .image {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.gallery-item .image img{
+.gallery--item .image img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -35,10 +35,10 @@ body,html {
   cursor: pointer;
   transition: .5s ease-in-out;
 }
-.gallery-item:hover .image img {
+.gallery--item:hover .image img {
   transform: scale(1.2);
 }
-.gallery-item .text {
+.gallery--item .text {
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -52,40 +52,40 @@ body,html {
   -webkit-backdrop-filter: blur(.5rem) saturate(1.8);
   backdrop-filter: blur(.5rem) saturate(1.8);
 }
-.gallery-item:hover .text {
+.gallery--item:hover .text {
   opacity: 1;
   animation: move-down .3s linear;
   padding: 1rem;
   width: 100%;
 }
-.w-2{
+.w__2{
   grid-column: span 2;
 }
-.w-3{
+.w__3{
   grid-column: span 3;
 }
-.w-4{
+.w__4{
   grid-column: span 4;
 }
-.w-5{
+.w__5{
   grid-column: span 5;
 }
-.w-6{
+.w__6{
   grid-column: span 6;
 }
-.h-2{
+.h__2{
   grid-row: span 2;
 }
-.h-3{
+.h__3{
   grid-row: span 3;
 }
-.h-4{
+.h__4{
   grid-row: span 4;
 }
-.h-5{
+.h__5{
   grid-row: span 5;
 }
-.h-6{
+.h__6{
   grid-row: span 6;
 }
 @media screen and (max-width: 60rem) {
@@ -110,11 +110,11 @@ body,html {
     text-align: left;
     font-size: initial;
   }
-  .about-container {
+  .about--container {
     padding: 1.6rem;
     font-size: initial;
   }
-  .menu-container {
+  .menu--container {
     padding: 1.6rem;
   }
   .tab button {
@@ -148,7 +148,7 @@ body,html {
   }
 }
 
-.page-container {
+.page--container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,7 +158,7 @@ body,html {
   overflow: hidden;
   flex-direction: row;
 }
-.active-logo {
+.active--logo {
   height: 3rem;
   background-color: #99de6e;
 }
@@ -206,7 +206,7 @@ topnav a.icon{
   .grid-container {
     display: none;
   }
-  .grid-container #hero-food {
+  .grid-container #hero--food {
     display: block;
   }
   
@@ -214,7 +214,7 @@ topnav a.icon{
     width: 70%;
 }
 
-.iframe-container {
+.iframe--container {
   overflow: visible;
   }
 }
@@ -232,7 +232,7 @@ header {
   
 }
  
-.about-container {
+.about--container {
   text-align: center;
   padding: 2rem 5rem;
   font-size: initial;
@@ -240,7 +240,7 @@ header {
 blockquote{
   padding: 1rem;
 }
-#menu-container {
+#menu--container {
   text-align: center;
   padding-bottom: 2rem;
   height: 25rem;
@@ -248,7 +248,7 @@ blockquote{
   padding-left: 4rem;
 }
 
-.menu-container {
+.menu--container {
   text-align: center; /* left */
   padding: 1rem;
   font-size: large;
@@ -289,7 +289,7 @@ h4{
   margin-left: 0 auto;
 }
                             /* this is for the fade in and out in the menu (our hero) in all browsers */
-.fadeout-top {
+.fadeout--top {
   height: 10rem;
     position: sticky;
     top: 0;
@@ -303,7 +303,7 @@ h4{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
     
 }
-.fadeout-bottom {
+.fadeout--bottom {
   height: 10rem;
     position: sticky;
     bottom: 0;
@@ -318,20 +318,20 @@ h4{
 }
 
 
-.where-container{
+.where--container{
   text-align: center;
   padding:1.6rem 6rem;
   font-size: initial;
 }
-.where-text {
+.where--text {
   padding-bottom: 1.6rem;
 }
-.iframe-container {
+.iframe--container {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
 }
-.iframe-container iframe{
+.iframe--container iframe{
   border: 0;
   left: 1.6rem;
   position: absolute;
